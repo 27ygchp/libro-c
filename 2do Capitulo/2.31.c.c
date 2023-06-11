@@ -1,18 +1,19 @@
-#include<stdio.h>
-#include<math.h>
-
-int main(){
-	
-	int numero = 0;
-	
-	printf("Numero\tCuadrado\tCubo\n");
-	
-	while(numero >= 10){
-
-		printf("%d\n\t", numero);
-		printf("%d\t\n", pow (numero, 2));
-		printf("%d\t\n", pow (numero, 3));
-	}
-	
-	return 0; 
-}
+#include<stdio.h> 
+  
+ int main(){ 
+  
+         int contador = -1; 
+        
+         printf("Numero\tCuadrado\tCubo\n");
+        
+         while(contador <= 10 ){ 
+        
+                  
+          printf("%d\t%d\t\t%d\t\n", ++contador, contador * contador, contador * contador * contador);
+                
+     
+                              
+         } 
+  
+         return 0;  
+ }
