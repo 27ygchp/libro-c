@@ -5,7 +5,6 @@ b) Mediante una instrucción printf con cuatro especificadores de conversión.
 c) Mediante cuatro instrucciones printf.*/
 
 #include<stdio.h>
-#include<stdlib.h>
 
 int main(){
 
@@ -17,7 +16,5 @@ printf("1");
 printf("2");
 printf("3");
 printf("4\n");
-
- system("pause");
     return 0;
 }
