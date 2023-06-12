@@ -16,7 +16,7 @@ scanf("%d %d", &numero1, &numero2);
 
 resultado = numero1 + numero2;
 
-printf("El resultado es: %d", resultado);
+printf("El resultado es: %d\n\n", resultado);
 
 int entero1, entero2, mayor;
 
@@ -27,9 +27,11 @@ mayor = entero1;
 
 if (entero2 > mayor){
     mayor = entero2;
-    printf("%d es mayor que %d", mayor);
+    
+    printf("%d es mayor\n\n", mayor);
+    
 } else {
-    printf("Los numeros son iguales");
+    printf("Los numeros son iguales\n\n");
 } 
 
 int NumerosPositivos = 0, SumaNumeros;
@@ -43,6 +45,6 @@ while (SumaNumeros != -1)
     printf("Ingrese los numeros que desea sumar (-1 para terminar): ");
     scanf("%d", &SumaNumeros);
 }
-    printf("La suma de los numeros es: %d", NumerosPositivos);
+    printf("La suma de los numeros es: %d\n\n", NumerosPositivos);
     return 0;
 }
