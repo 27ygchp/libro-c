@@ -10,8 +10,8 @@
 int main(){
 
 float pagoBruto; 
-float horasCompletas = 60; 
-float horaMedia = 90; 
+float horasCompletas; 
+float horaMedia; 
 float horasTrabajadas; 
 float pagoPorHora; 
 
