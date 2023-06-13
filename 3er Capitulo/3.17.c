@@ -11,7 +11,7 @@ int main(){
 float litros, kilometros;
 float kilometrosPorLitros = 0, litrosUtilizados = 0;
 int tanques = 0;
-int promedio = 0;
+int promedio;
 
 printf("Ingrese los litros utilizados (-1 para terminar): ");
 scanf("%f", &litros);
@@ -34,10 +34,11 @@ while (litros != -1)
 
     if (tanques != -1)
     {
-        kilometrosPorLitros / litrosUtilizados;
-        printf("El promedio general de kilometros/litros es de: %.2f\n\n");
-
+        promedio = kilometrosPorLitros / litrosUtilizados;
+        printf("\n\nEl promedio general de kilometros/litros es de: %.2f\n\n", promedio);
+        
     } else {
+    	
         printf("No se ingresaron datos");
     }
     
