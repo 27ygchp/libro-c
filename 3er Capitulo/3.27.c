@@ -5,27 +5,28 @@
 
 int main(){
 
-int numero1, numero2, numero; 
-int contador = 1, mayor = 0; 
+int mayor1 = 0, mayor2 = 0, numero = 0; 
+int contador = 0;  
 
-while (contador <= 10)
+while (contador < 10)
 {
     printf("Introduzca 10 numeros: "); 
     scanf("%d", &numero); 
-
     
-    if( numero1 > mayor){
-        numero1 = mayor;
+
+    if( numero > mayor1){
+        mayor2 = mayor1;
+        mayor1 = numero; 
     } 
 
-    if (numero2 > mayor )
+     else if (numero > mayor2 )
     {
-       numero2 = mayor;  
+       	mayor2 = numero;   
     }
     
     contador++; 
 }
 
-    printf("Los dos numeros mayores son: %d y %d", mayor); 
+    printf("Los dos numeros mayores son: %d y %d", mayor1, mayor2); 
     return 0; 
 }

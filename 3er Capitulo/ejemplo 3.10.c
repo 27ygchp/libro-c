@@ -13,6 +13,7 @@ int main(){
 		
 		if( resultado == 1){
 			aprobados++;
+
 		} else {
 			reprobados++;
 		}
