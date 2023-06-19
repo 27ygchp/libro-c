@@ -9,11 +9,10 @@
 
 int main(){
 
-float pagoBruto; 
-float horasCompletas; 
-float horaMedia; 
+float pagoBruto;   
 float horasTrabajadas; 
 float pagoPorHora; 
+int horas = 40; 
 
 printf("Introduzca el numero de horas trabajadas (-1 para terminar): ");
 scanf("%f", &horasTrabajadas);
@@ -23,20 +22,22 @@ while (horasTrabajadas != -1)
     printf("\nIntroduzca el pago por hora: ");
     scanf("%f",&pagoPorHora); 
     
-    pagoBruto = horasTrabajadas * pagoPorHora;
-
-    if (horasCompletas <= 40)
+    
+    if (horasTrabajadas <= horas)
     {
+        pagoBruto = horasTrabajadas * pagoPorHora;
         printf("\nEl salario es: %.3f\n", pagoBruto);
 
-    } else if ( horaMedia > 40 ){
-        printf("\nEl salario es: %.3f\n\n", pagoBruto); 
-    }
+    } else if ( horasTrabajadas > horas ){
 
+        pagoBruto = (horas * pagoPorHora) + ((horasTrabajadas - horas) * (pagoPorHora * 1.5)); 
+        printf("\nEl salario es: %.3f\n\n", pagoBruto); 
+
+    } 
     printf("\nIntroduzca el numero de horas trabajadas (-1 para terminar): ");
     scanf("%f", &horasTrabajadas);
     
-}
+} 
 
     return 0;
 }
