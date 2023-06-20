@@ -8,22 +8,25 @@ derecha tiene un valor por posición de 1, el siguiente dígito a la izquierda 
 posición de 2, después de 4, de 8, y así sucesivamente. Así, el número 234 se puede interpretar 
 como 4 * 1 + 3 * 10 + 2 * 100. El equivalente decimal del número binario 1101 es 1 * 1 + 0 * 2 + 1 * 
 4 + 1 * 8 o 1 + 0 + 4 + 8 o 13 */ 
-
 #include<stdio.h>
 
 int main(){
 
 
+int numeroBinario; 
+int decimal = 0, contador = 0; 
 
+printf("Introduzca un numero binario: ");
+scanf("%d", &numeroBinario);
 
-
-
-
-
-
-
-
-
+while (numeroBinario != 0)
+{
+		decimal +=  numeroBinario % 10 * contador * contador; 
+		numeroBinario /= 10;
+		contador++;
+		
+    }
+		printf("Su equivalente decimal es: %d\n\n", decimal);
 
     return 0; 
 }
