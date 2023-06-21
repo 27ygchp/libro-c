@@ -32,7 +32,7 @@ int main(){
       
         if (tanques > 0 )
         {
-            promedio = kilometrosTotal / (float)litrosUtilizados;
+            promedio = (float) kilometrosTotal / litrosUtilizados;
             printf("El promedio general de kilometros/litros es de: %f\n\n", promedio);
         } 
 

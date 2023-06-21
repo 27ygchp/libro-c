@@ -6,7 +6,30 @@ uno de los siguientes números de cinco dígitos, son palíndromos: 12321, 55555
 
 #include<stdio.h>
 
-int main(){
+int main() {
+    int numero, temporal;
+    int contador = 0;
+
+    printf("Ingrese un numero de 5 digitos: ");
+    scanf("%d", &numero);
+
+    temporal = numero;
+
+    while (temporal != 0)
+    {
+        contador *= 10;
+        contador += temporal % 10;
+        temporal /= 10;
+
+    }
+
+    if (numero == contador){
+
+        printf("Es polindromo");
+    } else{
+
+        printf("No es polindromo");
+    }
 
     return 0;
 }
