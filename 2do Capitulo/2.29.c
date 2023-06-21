@@ -34,5 +34,7 @@ printf("%d\n", '/');
 
 printf("%d\n", ' ');
 
+printf("%d\n", 'G');
+
 return 0; 
 }
