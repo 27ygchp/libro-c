@@ -28,7 +28,7 @@ while (horasTrabajadas != -1)
         pagoBruto = horasTrabajadas * pagoPorHora;
         printf("\nEl salario es: %.3f\n", pagoBruto);
 
-    } else if ( horasTrabajadas > horas ){ // Ese if no es necesario, con solo el else basta.
+    } else { 
 
         pagoBruto = (horas * pagoPorHora) + ((horasTrabajadas - horas) * (pagoPorHora * 1.5)); 
         printf("\nEl salario es: %.3f\n\n", pagoBruto); 
