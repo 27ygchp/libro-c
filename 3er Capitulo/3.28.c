@@ -38,12 +38,18 @@ int main(){
 	printf("Estudiantes reprobados: %d\n\n", reprobados);
 
 	if( aprobados >= 8){
+
 		printf("Objetivo Alcanzado\n");
-	} else {
+
+	} 
+	
+	else if (aprobados < 8)
+	{
 		printf("No se obtuvo el objetivo\n");
+
+	} else{
+		printf("Ingrese una opcion correcta");
 	}
-
-
 
 	return 0;
 }

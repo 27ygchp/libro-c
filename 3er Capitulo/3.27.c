@@ -10,7 +10,7 @@ int contador = 0;
 
 while (contador < 10)
 {
-    printf("Introduzca 10 numeros: "); // Mejorar este mensaje Ej: Introduzca un numero (1/10)
+    printf("Introduzca un numero (1/10): "); // Mejorar este mensaje Ej: Introduzca un numero (1/10)
     scanf("%d", &numero);
 
 
