@@ -4,7 +4,7 @@ int main(){
 	
 	int aprobados = 0;
 	int reprobados = 0;
-	int contador = 0;
+	int contador = 1;
 	int resultado; 
 
 	while( contador != 10){
@@ -13,6 +13,7 @@ int main(){
 		
 		if( resultado == 1){
 			aprobados++;
+
 		} else {
 			reprobados++;
 		}

@@ -14,10 +14,10 @@ de crédito, el programa debe desplegar el número de cuenta, el límite de cré
 
 int main(){
 
-float limiteCredito = 0, credito = 0; 
-float cargos = 0, saldoInicio = 0;
+float limiteCredito, credito; 
+float cargos, saldoInicio;
 float saldoFinal;
-int cuenta = 0; 
+int cuenta; 
 
 printf("\nIntroduzca el numero de cuenta (-1 para terminar): ");
 scanf("%d", &cuenta); 
