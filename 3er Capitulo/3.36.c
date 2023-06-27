@@ -25,7 +25,8 @@ Corregir el cálculo.
 
 while (numeroBinario != 0)
 {
-		decimal +=  numeroBinario % 10 * contador * contador;
+		decimal +=  numeroBinario % 10;
+		numeroBinario = contador * contador; 
 		numeroBinario /= 10;
 		contador++;
 

@@ -1,6 +1,3 @@
-/* Escriba un programa que lea la medida de uno de los lados de un cuadrado y que despliegue dicho cuadrado con
-asteriscos. Su programa debe trabajar con cuadrados de tamaño entre 1 y 20 */ 
-
 #include<stdio.h>
 
 int main(){
@@ -19,18 +16,30 @@ int columna = 1;
         scanf("%d", &numero);
 }
 		while  (fila <= numero ){
-			
-		while (columna <= numero){
-			
-			printf("* ");
-			columna++;
+
+			while (columna <= numero){
+		
+	 		    columna++;
+	 		
+	 			if(fila == 1 || fila == numero || columna == 1 ||columna == numero ){
+	 				
+				  	printf("*");
+				  	printf(" ");
+					
+	 		}
+  
+		
+		}	
+		
+			columna = 1;    
+			fila++;
+	 		printf("\n");
+	 		
+	 		
 	}
 	
-			columna = 1;
-			fila++;
-			printf("\n");
-		
-		}
+	
+    
     
     return 0; 
 }
