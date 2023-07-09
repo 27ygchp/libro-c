@@ -23,6 +23,6 @@ int main(){
     }
 
     printf("El resultado de la multiplicacion es: %d\n", resultado);
-
     return 0;
 }
+

@@ -14,21 +14,16 @@ int main(){
 
 
 int numeroBinario;
-int decimal = 0, contador = 0;
+int decimal = 1, contador = 0;
 
 printf("Introduzca un numero binario: ");
 scanf("%d", &numeroBinario);
 
-/*
-Corregir el cálculo.
-*/
-
 while (numeroBinario != 0)
 {
-		decimal +=  numeroBinario % 10;
-		numeroBinario = contador * contador; 
+		decimal +=  (numeroBinario % 10) * contador * 2; 
 		numeroBinario /= 10;
-		contador++;
+		contador++; 
 
     }
 		printf("Su equivalente decimal es: %d\n\n", decimal);

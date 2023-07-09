@@ -5,7 +5,7 @@ int main(){
 
     int base;
     int exponente;
-    int resultado;
+    int potencia = 1;
     int contador = 0;
 
     printf("introduzca la base: ");
@@ -14,19 +14,14 @@ int main(){
     printf("introduzca el exponente: ");
     scanf("%d", &exponente);
 
-    while (contador != 0)
+    while (contador < exponente)
     {
-       resultado = base * base;
-       resultado = ;
+       
+       potencia *= base;  
        contador++;
     }
 
-    printf("La potencia es: %d\n", resultado);
-
-
-
-
-
+    printf("La potencia es: %d\n", potencia);
 
     return 0;
 }
