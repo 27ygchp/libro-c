@@ -14,7 +14,7 @@ int main(){
 
 
 int numeroBinario;
-int decimal = 1, contador = 0;
+int decimal = 0, contador = 0;
 
 printf("Introduzca un numero binario: ");
 scanf("%d", &numeroBinario);
