@@ -14,7 +14,7 @@ int main(){
 
 int numero; 
 
-printf("Ingrese un numero de cuatro digitos( ): "); 
+printf("Ingrese un numero de cuatro digitos: "); 
 scanf("%d", &numero); 
 
 
