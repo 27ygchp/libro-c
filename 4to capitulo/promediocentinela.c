@@ -15,7 +15,7 @@ for (contador = 1; calificacion != -1; contador++)
 
 	if (calificacion != 0){
 		
-		promedio = total / 10; 
+		promedio = total / contador; 
 
 	} else{
 		

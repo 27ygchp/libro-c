@@ -6,3 +6,11 @@ Su programa debe utilizar una instrucción switch para ayudar a determinar el pr
 Su programa debe calcular y desplegar el valor total de venta de todos los productos vendidos la semana pasada.
 */
 
+#include<stdio.h>
+
+int main(){
+
+
+
+    return 0; 
+}
