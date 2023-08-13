@@ -20,7 +20,8 @@ int main(){
 int cuenta; 
 float limiteCredito; 
 float nuevoLimite = 0; 
-float montoActual; 
+float monto_actual; 
+float debe = 0; 
 int cliente; 
  
 for(cliente = 1; cliente <= 3; cliente++){
@@ -32,16 +33,18 @@ for(cliente = 1; cliente <= 3; cliente++){
 	scanf("%f", &limiteCredito); 
 	
 	printf("\nIngrese el monto actual del cliente: "); 
-	scanf("%f", &montoActual); 
+	scanf("%f", &monto_actual); 
 	
-	nuevoLimite = limiteCredito * 0.5; 
+	nuevoLimite = limiteCredito / 2; 
 	
 	printf("\nEl nuevo limite de credito para la cuenta %d es de: $%.2f\n", cuenta, nuevoLimite); 
-	
-	if(montoActual > nuevoLimite){
-		printf("El monto actual excede el nuevo limite de credito.\n\n");
-	}
-}
 
-    return 0; 
+	
+	if(monto_actual > nuevoLimite){
+
+		debe = monto_actual - nuevoLimite; 
+		printf("\nEl cliente excede el limite de credito.\nEl cliente debe a la empresa: %.2f\n", debe); 
+	} 
+}
+    return 0;
 }
