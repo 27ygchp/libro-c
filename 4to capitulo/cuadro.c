@@ -7,11 +7,16 @@ int main(){
 	printf("Ingrese un numero: ");
 	scanf("%d", &numero); 
 	
-	for(contador = 1; contador <= numero; contador++){
+	for(contador = 0; contador < numero; contador++){
 		
-		for(cuadro = 1; cuadro <= numero; cuadro++){
+		for(cuadro = 0; cuadro < numero; cuadro++){
 			
-			printf("* ");
+			if(contador == 0 || cuadro == 0 || contador == numero - 1 || cuadro == numero - 1){
+				
+				printf("*");
+			} else{
+				printf(" "); 
+			}
 		}
 		
 		printf("\n"); 
