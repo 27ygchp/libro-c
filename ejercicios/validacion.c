@@ -7,6 +7,7 @@ debe decir que opcion ingreso.
 #include<stdio.h>
 
 int main() {
+    
     int sexo;
 
     do {
