@@ -13,7 +13,7 @@ int main(){
 	printf("Ingrese tres numeros, separados por un espacio: "); 
 	scanf("%d %d %d", &numero1, &numero2, &numero3); 
 	
-	printf("El numero mayor es: %d", maximo(numero1, numero2, numero3)); 
+	printf("\nEl numero mayor es: %d", maximo(numero1, numero2, numero3)); 
 
 	return 0; 	
 }

@@ -43,6 +43,7 @@ int main() {
 		printf("5) Salir.\n");
 		scanf("%d", &opcion);
 
+
 		switch (opcion)	{
 
 			case 1:
